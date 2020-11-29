@@ -6,7 +6,7 @@
             <task-card class="col-lg-3" v-for="task in allTasks"
                        v-bind:id="task.id"
                        v-bind:task-header="task.title"
-                       v-bind:task-created="'12.11.2020'"
+                       v-bind:task-created="'29.11.2020'"
                        v-bind:is-done="task.completed"
                        v-bind:key="task.id"
 
@@ -33,7 +33,6 @@
             ...mapActions(["fetchTasks"])
         },
         async mounted() {
-            console.log("AAAAAAAAAAAAAAAAAAAAAAAA")
             this.fetchTasks(20)
         }
 
