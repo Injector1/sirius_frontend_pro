@@ -1,7 +1,7 @@
 <template>
     <div class="container task-create-container">
         <img src="../assets/img/closeButton.png" @click="$router.push('/tasks')" width="60px" height="60px"/>
-        <h1>New task</h1>
+        <h1 class="title">New task</h1>
         <task-create-form/>
     </div>
 </template>
@@ -28,5 +28,11 @@
         position: absolute;
 
         transform: translate(-50%, -50%);
+    }
+
+    @media screen and (max-width: 400px){
+        .title {
+            font-size: $font-size-header - 10px;
+        }
     }
 </style>

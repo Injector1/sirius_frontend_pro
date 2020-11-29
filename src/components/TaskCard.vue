@@ -81,7 +81,8 @@
 
     @media screen and (max-width: 600px){
         .task-card {
-            margin: 1% 2% 1% 2%;
+            margin: 2% 2% 2% 2%;
+            padding: 3vh 3vh 3vh 3vh;
         }
 
     }

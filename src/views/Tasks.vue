@@ -1,7 +1,7 @@
 <template>
     <div class="container tasks-container">
         <tasks-counter/>
-        <h1>Tasks</h1>
+        <h1 class="title">Tasks</h1>
         <div class="row">
             <task-card class="col-lg-3" v-for="task in allTasks"
                        v-bind:id="task.id"
@@ -55,5 +55,11 @@
 
     .tasks-container {
         padding-top: 1%;
+    }
+
+    @media screen and (max-width: 400px){
+        .title {
+            font-size: $font-size-header - 10px;
+        }
     }
 </style>
